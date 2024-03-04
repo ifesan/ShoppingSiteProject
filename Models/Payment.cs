@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 namespace ShoppingSite.Models
 {
     public class Payment
@@ -11,6 +12,7 @@ namespace ShoppingSite.Models
         public string TransactionId { get; set; }
 
         // Navigation property
+        [JsonIgnore]
         public Order? Order { get; set; }
     }
 }

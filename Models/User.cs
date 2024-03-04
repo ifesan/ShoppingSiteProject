@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 namespace ShoppingSite.Models
 {
     public class User
@@ -9,6 +10,7 @@ namespace ShoppingSite.Models
         public string PasswordHash { get; set; }
 
         // Navigation property for orders
+        [JsonIgnore]
         public ICollection<Order>? Orders { get; set; }
     }
 }

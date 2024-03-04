@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShoppingSite.Models;
 
 namespace ShoppingSite.Models
 {
-public class ShoppingContext : DbContext
+public class ShoppingContext : IdentityDbContext<IdentityUser>
     {
         public ShoppingContext(DbContextOptions<ShoppingContext> options) : base(options)
         {

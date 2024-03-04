@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 namespace ShoppingSite.Models
 {
     public class Product
@@ -11,9 +12,11 @@ namespace ShoppingSite.Models
         public int CategoryId { get; set; }
 
         // Navigation property for category
+        [JsonIgnore]
         public Category? Category { get; set; }
 
         // Navigation property for order details
+        [JsonIgnore]
         public ICollection<OrderDetail>? OrderDetails { get; set; }
     }
 }
