@@ -1,5 +1,5 @@
 GOALS
-This project aims to develop of a .NET Core(C#) Restful backend service for a shopping platform.It establishes a well-designed SQLite database with six tables (User, Category, Product, Payment, Order, Orderdetail) and foreign key relationships to support the platform's data needs. The tables created and integrated into C# are as follows :
+This project aims to develop of a .NET Core(C#) Restful backend service for a shopping platform.It establishes a well-designed SQLServer database with six tables (User, Category, Product, Payment, Order, Orderdetail) and foreign key relationships to support the platform's data needs. The tables created and integrated into C# are as follows :
 
 CREATE TABLE Users (
     UserId INT PRIMARY KEY,
